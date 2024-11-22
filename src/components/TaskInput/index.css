@@ -1,0 +1,222 @@
+.app-container {
+    background-image: linear-gradient(to top, #9796f0, #fbc7d4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.card-container {
+    background-color: #ffffff;
+    width: 85%;
+    border-radius: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .card-container {
+        width: 70%;
+    }
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    max-width: 972px;
+
+}
+
+.input {
+    background-color: white;
+    width: 95%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.status-input{
+    background-color: white;
+    width: 45%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.date-input{
+    background-color: white;
+    width: 45%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+
+}
+
+.button-btn {
+    background-color: #8b5cf6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: flex-start;
+}
+
+.button-btn:hover {
+    background-color: rgb(53, 223, 53);
+}
+
+.My-heading {
+    color: #000000;
+    background-color: #Ffff00;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-family: "Sans-serif";
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: underline;
+}
+
+.todo-list {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (min-width:768px) {
+    .my-heading {
+        font-size: 42px;
+    }
+}
+
+.to-do-heading {
+
+    color: #000000;
+}
+
+.label {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.create-heading {
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+@media screen and (min-width:768px) {
+    .create-heading {
+        font-size: 32px;
+    }
+}
+
+.add-task-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.line {
+    border: 1px solid #b5b7c4;
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+
+.my-task-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.my-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.img {
+    height: 200px;
+    width: 280px;
+    margin-left: 22px;
+    align-self: center;
+}
+
+@media screen and (max-width:578px) {
+    .img {
+        height: 130px;
+        width: 160px;
+        align-self: center;
+        order: 1;
+        margin: 10px;
+    }
+
+    .add-task-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        order: 2;
+    }
+
+
+
+}
+
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filters-container .input {
+    width: 48%;
+  }
+  

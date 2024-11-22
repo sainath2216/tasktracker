@@ -1,0 +1,196 @@
+.edit-icon {
+    width: 25px;
+    height: 35px;
+}
+
+.edit-icon:hover {
+    color: red;
+    
+}
+
+.delete-icon {
+    width: 25px;
+    height: 35px;
+}
+
+.delete-icon:hover {
+    color: red;  
+}
+
+
+.edit-input {
+    width: 80%;
+}
+
+.save-btn {
+    margin-left: 20px;
+    background-color: #00ed53;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+.cancel-btn {
+    margin-left: 20px;
+    background-color: red;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+.task-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+    margin: 10px;
+    box-sizing: border-box;
+    max-width: 400px;
+}
+
+.card-actions {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.modal-content {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 8, 8, 0.5);
+}
+
+.trigger-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+
+.trigger-button-cancel {
+    background-color: #00ed53;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.title-class{
+    color:rgb(229, 20, 20);
+    font-size: 18px;
+    text-decoration: underline;
+
+}
+.description-class{
+    color:rgb(16, 16, 17);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.due-date-class{
+    color:rgb(9, 9, 9);
+}
+.status-class{
+    color:rgb(0, 0, 0);
+
+}
+.input {
+    background-color: white;
+    width: 75%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.popup-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .popup-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .popup-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+   
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-cancel-btn {
+    background-color: #00ed53;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .popup-delete-btn {
+    background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .popup-trigger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-trigger-btn:hover .delete-icon {
+    color: red;
+  }
+  
