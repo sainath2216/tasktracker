@@ -1,3 +1,5 @@
+//TaskInput
+
 import React, { useState, useEffect } from "react";
 import { v4 } from "uuid";
 import "./index.css";
@@ -14,13 +16,11 @@ const TaskInput = () => {
   const [filterStatus, setFilterStatus] = useState("All");
   const [sortOrder, setSortOrder] = useState("asc");
 
-  // Load tasks from localStorage on mount
   useEffect(() => {
     const savedTodoList = JSON.parse(localStorage.getItem("todoList"));
     if (savedTodoList) setTodoList(savedTodoList);
   }, []);
 
-  // Save tasks to localStorage on todoList update
   useEffect(() => {
     localStorage.setItem("todoList", JSON.stringify(todoList));
   }, [todoList]);
@@ -56,7 +56,6 @@ const TaskInput = () => {
       description: descriptionInput,
       dueDate: dueDateInput,
       status: statusInput,
-      isChecked: false,
     };
 
     setTodoList((prevList) => [...prevList, newTask]);
@@ -77,7 +76,9 @@ const TaskInput = () => {
 
   const saveEditedTask = (id, editedTask) => {
     setTodoList((prevList) =>
-      prevList.map((task) => (task.id === id ? { ...task, ...editedTask } : task))
+      prevList.map((task) =>
+        task.id === id ? { ...task, ...editedTask } : task
+      )
     );
     setEditingTaskId(null);
   };
@@ -105,11 +106,13 @@ const TaskInput = () => {
               <textarea
                 placeholder="Enter Task Description"
                 className="input"
+                id="description"
                 value={descriptionInput}
                 onChange={(e) => setDescriptionInput(e.target.value)}
               />
               <input
                 type="date"
+                id="date"
                 className="date-input"
                 value={dueDateInput}
                 onChange={(e) => setDueDateInput(e.target.value)}
@@ -117,6 +120,7 @@ const TaskInput = () => {
               <select
                 className="status-input"
                 value={statusInput}
+                id="status"
                 onChange={(e) => setStatusInput(e.target.value)}
               >
                 <option value="Pending">Pending</option>
@@ -142,6 +146,7 @@ const TaskInput = () => {
               value={filterStatus}
               onChange={(e) => setFilterStatus(e.target.value)}
               className="input"
+              id="filter-status"
             >
               <option value="All">All</option>
               <option value="Pending">Pending</option>
@@ -152,6 +157,7 @@ const TaskInput = () => {
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
               className="input"
+              id="sort-status"
             >
               <option value="asc">Sort by Due Date (Asc)</option>
               <option value="desc">Sort by Due Date (Desc)</option>

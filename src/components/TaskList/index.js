@@ -1,3 +1,5 @@
+//TaskList
+
 import { useState } from "react";
 import Popup from "reactjs-popup";
 
@@ -34,6 +36,7 @@ const TaskList = ({ todoDetails, saveEditedTask, deleteTodo }) => {
         <>
           <input
             type="text"
+            id="task"
             value={editedTask.title}
             onChange={(e) => onEditChange("title", e.target.value)}
             placeholder="Title"
@@ -41,6 +44,7 @@ const TaskList = ({ todoDetails, saveEditedTask, deleteTodo }) => {
           />
           <input
             type="text"
+            id="description"
             value={editedTask.description}
             onChange={(e) => onEditChange("description", e.target.value)}
             placeholder="Description"
@@ -48,12 +52,14 @@ const TaskList = ({ todoDetails, saveEditedTask, deleteTodo }) => {
           />
           <input
             type="date"
+            id="date"
             value={editedTask.dueDate}
             onChange={(e) => onEditChange("dueDate", e.target.value)}
             className="input"
           />
           <select
             value={editedTask.status}
+            id="status"
             onChange={(e) => onEditChange("status", e.target.value)}
             className="input"
           >
@@ -79,7 +85,7 @@ const TaskList = ({ todoDetails, saveEditedTask, deleteTodo }) => {
             <strong>Status:</strong> {status}
           </p>
           <div className="card-actions">
-            <button onClick={() => setIsEditing(true)}>
+            <button onClick={() => setIsEditing(true)} className="edit-btn" >
               <MdOutlineDriveFileRenameOutline
                 className="edit-icon"
                 size={22}
@@ -93,10 +99,10 @@ const TaskList = ({ todoDetails, saveEditedTask, deleteTodo }) => {
                     <RiDeleteBin2Fill className="delete-icon" />
                   </button>
                 }
-                className="popup-container"
+                
               >
                 {(close) => (
-                  <div className="popup-content">
+                  <div >
                     <p className="popup-message">
                       Are you sure you want to delete this task?
                     </p>

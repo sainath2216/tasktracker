@@ -85,6 +85,7 @@
     padding-left: 16px;
     padding-right: 16px;
     align-self: flex-start;
+    margin-top: 13px;
 }
 
 .button-btn:hover {

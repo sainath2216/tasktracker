@@ -1,20 +1,31 @@
 .edit-icon {
-    width: 25px;
+    width: 30px;
     height: 35px;
+   
 }
 
 .edit-icon:hover {
     color: red;
+    border-style: dotted;
     
 }
 
 .delete-icon {
     width: 25px;
     height: 35px;
+
 }
+.edit-btn {
+    border: none;  
+    border-radius: 4px;       
+    cursor: pointer;
+    background-color: transparent;
+  }
 
 .delete-icon:hover {
     color: red;  
+    border-style: dotted;
+    padding: 3px;
 }
 
 
@@ -57,7 +68,9 @@
     margin-bottom: 16px;
     margin: 10px;
     box-sizing: border-box;
-    max-width: 400px;
+    width: 250px;
+    height: auto;
+    
 }
 
 .card-actions {
@@ -161,7 +174,7 @@
   
   .popup-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
   .popup-cancel-btn {
