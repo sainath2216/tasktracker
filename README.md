@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Simple React Task Tracker Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Build a simple React app to manage daily tasks.
 
-## Available Scripts
+## Refer to the image below:
+![task tracker](https://github.com/user-attachments/assets/d2ff2f93-7a29-4bcb-ab78-63c5d16155f0)
 
-In the project directory, you can run:
+### Set Up Instructions
++ npx create-react-app task-manager
++  cd task-managwe
++ Download dependencies by running npm install
++ Start up the app using npm start
+  - Runs the app in the development mode.\
+  -  Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    The page will reload when you make changes.\
+    You may also see any lint errors in the console.
 
-### `npm start`
+### Completion Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  Functionality to be added. 
+  The app must have the following functionalities
+  1. **Add Task**: Form to add a task with Title, Description, Due Date, and  Status (Pending, In Progress, Completed). 
+  2. **View Tasks**: Display a list of tasks in a table or cards. 
+  3. **Delete Task**: Add a delete button with confirmation. 
+  4. **Edit Task**:  Inline or modal-based editing of tasks. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Styling: 
+   1. Basic styling using plain CSS or a framework (e.g., Bootstrap/Tailwind). b. Ensure responsiveness. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Data Persistence: 
+    1. Store tasks in the browser's local storage. 
 
-### `npm run build`
+ ### Implementation Files
+   + src/components/TaskInput/index.js
+   + src/components/TaskInput/index.css
+   + src/components/TaskList/index.js
+   + src/components/TaskList/index.css
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Bonus (Optional)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ + Add filters (e.g., by status) or sorting (e.g., by due date).
+ + Use useContext or Redux for state management.
