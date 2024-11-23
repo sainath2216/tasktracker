@@ -1,4 +1,4 @@
-# Simple React Task Tracker Application
+# Task Tracker Application
 
 Build a simple React app to manage daily tasks.
 
